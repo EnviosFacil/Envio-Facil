@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio Fácil Larrainzar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .header img {
+            height: 60px;
+        }
+        .header nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .header nav a:hover {
+            color: #ff6f61;
+        }
+        .banner {
+            background: linear-gradient(135deg, #ff6f61, #ff9966);
+            color: #fff;
+            padding: 150px 20px;
+            text-align: center;
+            margin-top: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .banner p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-bar input {
+            width: 400px;
+            padding: 15px;
+            border-radius: 30px;
+            border: none;
+            font-size: 1.2em;
+            outline: none;
+        }
+        .search-bar button {
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-bar button:hover {
+            background-color: #ff5046;
+        }
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+        .section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #b3b3b3;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product p {
+            font-size: 1em;
+            color: #f5f5f5;
+        }
+        .footer {
+            background-color: #1f1f1f;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .footer .menu a {
+            color: #ff6f61;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .footer .menu a:hover {
+            color: #ff9966;
+        }
+        .footer .contact {
+            margin-top: 20px;
+        }
+        .footer .contact a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+        .footer .contact a:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="ENVIO FACIL LARRAINZAR.PNG" alt="Logo Envio Fácil Larrainzar">
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#envio">Envios</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="banner" id="home">
+        <h1>Envio Fácil Larrainzar</h1>
+        <p>La forma más rápida y segura de enviar tus paquetes</p>
+        <div class="search-bar">
+            <input type="text" id="trackingNumber" placeholder="Ingresa tu código de rastreo">
+            <button onclick="trackPackage()">Rastrear</button>
+        </div>
+    </section>
+
+    <section class="section" id="envio">
+        <h2>Servicios de Envío</h2>
+        <p>Ofrecemos envíos a nivel estatal, nacional e internacional, garantizando la seguridad y rapidez que necesitas.</p>
+    </section>
+
+    <section class="section" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="frijol.jpg" alt="Frijol">
+                <p>FRIJOL</p>
+            </div>
+            <div class="product">
+                <img src="queso.jpg" alt="Queso">
+                <p>QUESO</p>
+            </div>
+            <div class="product">
+                <img src="quesillo.jpg" alt="Quesillo">
+                <p>QUESILLO</p>
+            </div>
+            <div class="product">
+                <img src="ropa.jpg" alt="Ropa">
+                <p>ROPA</p>
+            </div>
+            <div class="product">
+                <img src="juguetes.jpg" alt="Juguetes">
+                <p>JUGUETES</p>
+            </div>
+            <div class="product">
+                <img src="artesania.jpg" alt="Artesanía">
+                <p>ARTESANIA</p>
+            </div>
+            <div class="product">
+                <img src="calzado.jpg" alt="Calzado">
+                <p>CALZADO</p>
+            </div>
+            <div class="product">
+                <img src="chicatana.jpg" alt="Chicatana">
+                <p>CHICATANA</p>
+            </div>
+            <div class="product">
+                <img src="nixtamal.jpg" alt="Nixtamal">
+                <p>NIXTAMAL</p>
+            </div>
+            <div class="product">
+                <img src="pinole.jpg" alt="Pinole">
+                <p>PINOLE</p>
+            </div>
+            <div class="product">
+                <img src="cafe.jpg" alt="Café">
+                <p>CAFE</p>
+ </div>
+            <div class="product">
+                <img src="PAN.jpg" alt="PAN">
+                <p>PAN</p>
+            </div>
+            <div class="product">
+                <img src="camaron.jpg" alt="Camarón Seco">
+                <p>CAMARON SECO</p>
+            </div>
+            <div class="product">
+                <img src="carne.jpg" alt="Carne Ahumada">
+                <p>CARNE AHUMADA</p>
+            </div>
+            <div class="product">
+                <img src="chicharron.jpg" alt="Chicharrón">
+                <p>CHICHARRON</p>
+            </div>
+            <div class="product">
+                <img src="todo.jpg" alt="todo">
+                <p>Y MUCHOS MÁS</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacto">
+        <div class="menu">
+            <a href="#home">Inicio</a>
+            <a href="#envio">Envios</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="contact">
+            <a href="tel:+529673606053">967 360 6053</a> | 
+            <a href="https://wa.me/529673606053" target="_blank">WhatsApp</a> | 
+            <a href="https://www.facebook.com/profile.php?id=61550333433426" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script>
+        function trackPackage() {
+            const trackingNumber = document.getElementById('trackingNumber').value.trim();
+            
+            // Ejemplo de patrones para diferentes compañías
+            const patterns = {
+                'DHL': /^(\d{10}|\d{12}|\d{14})$/,
+                'FedEx': /^(\d{12}|\d{15})$/,
+                'UPS': /^1Z[A-Z0-9]{16}$/,
+                'USPS': /^(\d{20}|\d{22})$/
+            };
+
+            let company = '';
+
+            for (let key in patterns) {
+                if (patterns[key].test(trackingNumber)) {
+                    company = key;
+                    break;
+                }
+            }
+
+            if (company) {
+                let url;
+                switch (company) {
+                    case 'DHL':
+                        url = `https://www.dhl.com/global-en/home/tracking.html?tracking-id=${trackingNumber}`;
+                        break;
+                    case 'FedEx':
+                        url = `https://www.fedex.com/apps/fedextrack/?action=track&trackingnumber=${trackingNumber}`;
+                        break;
+                    case 'UPS':
+                        url = `https://www.ups.com/track?tracknum=${trackingNumber}`;
+                        break;
+                    case 'USPS':
+                        url = `https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=${trackingNumber}`;
+                        break;
+                }
+                window.location.href = url;
+            } else {
+                alert('Código de rastreo no reconocido. Por favor, verifica e intenta nuevamente.');
+            }
+        }
+
+        function clearInput() {
+            document.getElementById('trackingNumber').value = '';
+        }
+    </script>
+</body>
+</html>
